@@ -1,0 +1,20 @@
+
+.textbox {
+    width: 300px;        /* Width of the chat box */
+    height: 100px;       /* Height of the chat box */
+    padding: 10px;       /* Space inside the box */
+    background-color: #bab0b0; /* Background color */
+    border: 15px solid #0000; /* Border around the chat box */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Shadow for a bit of depth */
+    overflow-y: auto;    /* Makes content scrollable if it overflows */
+}
+
+.textinput {
+    width: 300px;        /* Width of the chat box */
+    height: 100px;       /* Height of the chat box */
+    padding: 10px;       /* Space inside the box */
+    background-color: #bab0b0; /* Background color */
+    border: 15px solid #0000; /* Border around the chat box */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Shadow for a bit of depth */
+    overflow-y: auto;    /* Makes content scrollable if it overflows */
+}
