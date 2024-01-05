@@ -14,7 +14,7 @@ export const InputBox = ({setUserInput}) => {
 
     return (
         <>
-            <input type="text" className="textinput" value={localInput} 
+            <input type="text" className="textbox" value={localInput} 
             onChange={(e) => setLocalInput(e.target.value)} onKeyDown={keyDown}></input>
         </>
     )
