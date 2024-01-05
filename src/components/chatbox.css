@@ -1,20 +1,44 @@
 .container {
     width: 100%; /* Adjust the width as necessary */
-    min-height: 500px;
-    max-height: 500px; /* Adjust the height as desired */
-    border: 1px solid #ccc; /* Optional: adds a border around the chat container */
+    min-height: 600px;
+    max-height: 1000px; /* Adjust the height as desired */
+    /* border: 1px solid #ccc;  Optional: adds a border around the chat container */
     overflow-y: auto; /* Enables vertical scrolling */
-    margin-bottom: 10px; /* Space between chat container and input box */
+    margin-bottom: 0px; /* Space between chat container and input box */
     display: grid;
     justify-items: center;
   }
 
 
 .textbox {
-    width: 300px;        /* Width of the chat box */
+    width: 800px;        /* Width of the chat box */
     height: 100px;       /* Height of the chat box */
-    background-color: #bab0b0; /* Background color */
+    background-color: none; /* #bab0b0 Background color */
     border: 5px solid black; /* Border around the chat box */
+    border-radius:15px;
     overflow-x: auto;
     text-align: center;
+    
+}
+
+.textinput {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  background-color: none;
+  border: 2px solid black;
+  border-radius: 15px;
+
+}
+
+.input-box-container {
+  position: fixed; /* Fixes the input box to the bottom */
+  left: 30rem;
+  right: 30rem;
+  bottom: 0;
+  padding: 1rem 2rem; /* Same horizontal padding as #root to align content */
+  background: none; /* Match the background with your chat application background */
+  z-index: 1000;
 }
