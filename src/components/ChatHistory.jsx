@@ -8,6 +8,7 @@ export const ChatHistory = ({userInput}) => {
     useEffect(() => {
         if (userInput.trim() != ""){ 
             setHistory((prevState) => {
+
                 return [...prevState, userInput]});
         }
     }, [userInput]);

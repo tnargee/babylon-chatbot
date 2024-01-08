@@ -1,3 +1,4 @@
+
 //the query function is not done yet.
 
 import { OpenAI } from "openai";
@@ -57,3 +58,4 @@ export async function query(chatHistory) {
 };
 
 query(["Hello", "How are you!", "I'm doing fine today, could I have some help with my farm"]);
+
