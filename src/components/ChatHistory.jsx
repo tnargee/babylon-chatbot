@@ -3,16 +3,11 @@ import ChatBox from "./ChatBox";
 
 export const ChatHistory = ({userInput}) => {
     const [history, setHistory] = useState([]);
-    const [thread, setThread] = useState(null);
-
-    useEffect(() => {
-        setThread(makeThread());
-    }, [])
 
     useEffect(() => {
         if (userInput.trim() != ""){ 
                 setHistory((prevState) => {
-                    return [...prevState, userInput, query(userInput, thread, client)]});
+                    return [...prevState, userInput]});
         }
         
     }, [userInput]);
