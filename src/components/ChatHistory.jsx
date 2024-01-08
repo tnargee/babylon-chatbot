@@ -8,16 +8,13 @@ export const ChatHistory = ({userInput}) => {
     useEffect(() => {
         if (userInput.trim() != ""){ 
             setHistory((prevState) => {
-                //remove later, query function broken
-                query([...prevState, userInput]);
-
                 return [...prevState, userInput]});
         }
     }, [userInput]);
         
 
     return (
-        <>
+        <div className="chat-history">
             {history.map((query) => {
                 return (
                     <>
@@ -25,7 +22,7 @@ export const ChatHistory = ({userInput}) => {
                     </>
                 );
             })}
-        </>
+        </div>
     )
 }
 
