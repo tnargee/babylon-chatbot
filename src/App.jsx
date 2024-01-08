@@ -1,16 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import Chatbot from './components/Chatbot.jsx'
 import './App.css'
+import babylonLeafLogo from './assets/babylon_leaf.png';
+
+
 
 function App() {
 
   return (
     <>
-      <h2>Babylon MicroFarms Gallieri Support</h2>
+    <div className='header'>
+      <img src={babylonLeafLogo}></img>
+      <h2>BABYLON MICROFARMS GALLERI SUPPORT</h2>
+    </div>
+
       <h3>Powered by ChatGPT</h3>
       <Chatbot></Chatbot>
+
+      
+     
     </>
   )
 }
