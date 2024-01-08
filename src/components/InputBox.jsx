@@ -13,10 +13,12 @@ export const InputBox = ({setUserInput}) => {
     };
 
     return (
-        <>
-            <input type="text" className="textbox" value={localInput} 
+
+        <div className="input-box-container">
+            <input type="text" className="textinput" value={localInput} 
+
             onChange={(e) => setLocalInput(e.target.value)} onKeyDown={keyDown}></input>
-        </>
+        </div>
     )
 }
 
