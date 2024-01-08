@@ -1,15 +1,20 @@
 import { useState, useEffect } from "react";
 import ChatBox from "./ChatBox";
-import { query } from "../helpers.js"
 
 export const ChatHistory = ({userInput}) => {
     const [history, setHistory] = useState([]);
+    const [thread, setThread] = useState(null);
+
+    useEffect(() => {
+        setThread(makeThread());
+    }, [])
 
     useEffect(() => {
         if (userInput.trim() != ""){ 
-            setHistory((prevState) => {
-                return [...prevState, userInput]});
+                setHistory((prevState) => {
+                    return [...prevState, userInput, query(userInput, thread, client)]});
         }
+        
     }, [userInput]);
         
 
