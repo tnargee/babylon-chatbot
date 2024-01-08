@@ -1,8 +1,7 @@
 #root {
-  /* max-width: 1280px; */
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-<<<<<<< HEAD
   text-align: center;
   position: relative;
   height: 100vh;
@@ -21,26 +20,6 @@
   padding-bottom: 0px;
 }
 
-
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-=======
-  /* text-align: center; */
- 
-  
-
->>>>>>> 63ddcd46d31f441a1836dc7b7691606711bef80f
-}
 h2{
   
   text-size-adjust: 30px;
@@ -76,3 +55,5 @@ img{
   margin-left: 10px;
 
 }
+
+
