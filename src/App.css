@@ -19,10 +19,17 @@ h2{
   margin-bottom: 15px;
 
 }
+h2 a:link{
+  color: #004258;
+  text-align: center;
+  
+  
+}
 h3{
   text-align: center;
   color: #004258;
 }
+
 .header{
   
   display: flex;
@@ -33,7 +40,7 @@ h3{
 
 img{ 
   
-  margin-right: 20px;
+  margin-right: 10px;
   display: flex;
   flex-direction: row;
   size: 10px;
