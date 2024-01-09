@@ -4,10 +4,7 @@ import { OpenAI } from "openai";
 
 const client = new OpenAI(
     {   
-        //change this back to the actual API key once testing is finished
-        // DO NOT LEAVE AS COMMENT
-        // apiKey: import.meta.env.VITE_OPENAI_API_KEY,
-        apiKey: "myKey", //change back when testing
+        apiKey: import.meta.env.VITE_KEY,
         dangerouslyAllowBrowser: true,
     }
 );
@@ -32,9 +29,7 @@ export async function query(question, threadID) {
     let run = await client.beta.threads.runs.create(
         threadID,
         {
-            assistant_id: "myID", //change to real key when testing
-            // assistantID: import.meta.env.ASSISTANT_ID,
-            // change this back when finished
+            assistant_id: import.meta.env.VITE_ASSISTANT_ID,
         }
     )
 
