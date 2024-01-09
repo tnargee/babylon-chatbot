@@ -1,8 +1,8 @@
 .container {
     width: 100%; /* Adjust the width as necessary */
-    min-height: 1000px;
-    max-height: 1000px; /* Adjust the height as desired */
-    border: 1px solid #ccc; /* Optional: adds a border around the chat container */
+    min-height: 500px;
+    max-height: 600px; /* Adjust the height as desired */
+    border: none; /* Optional: adds a border around the chat container */
     overflow-y: auto; /* Enables vertical scrolling */
     margin-bottom: 10px; /* Space between chat container and input box */
     display: grid;
@@ -10,52 +10,92 @@
   }
 
 
-  .textbox {
-    width: 300px;        /* Width of the chat box */
-    height: 100px;       /* Height of the chat box */
-    background-color: #53e300cb; /* Background color */
-    border: 5px solid black; /* Border around the chat box */
+.textbox {
+    width: 70vw;        /* Width of the chat box */
+    /* background-color: lightgrey; /* Background color */
+    border: 1.5px solid black; /* Border around the chat box */
+    border-radius: 15px; /* Border around the chat box */
     overflow-x: auto;
-    text-align: center;
-    min-height: 100px;
-    max-height: 300px; /* Adjust the height as desired */
+    text-align: left;
+    min-height: 50px;
+    max-width: 950px;
     /* border: 1px solid #ccc;  Optional: adds a border around the chat container */
     overflow-y: auto; /* Enables vertical scrolling */
     margin-bottom: 0px; /* Space between chat container and input box */
     display: grid;
     justify-items: center;
+    padding: 0rem 1rem;
+    white-space: pre-wrap; /* Preserves whitespace and line breaks */
+    word-wrap: break-word;
   }
 
-
-.textbox {
-    width: 800px;        /* Width of the chat box */
-    height: 100px;       /* Height of the chat box */
-    background-color: none; /* #bab0b0 Background color */
-    border: 5px solid black; /* Border around the chat box */
-    border-radius:15px;
-    overflow-x: auto;
-    text-align: center;
-    
-}
-
 .textinput {
-  box-sizing: border-box;
-  width: 100%;
-  text-align: center;
+  /* box-sizing: border-box; */
+  width: 70vw;
+  max-width: 900px;
   margin: auto;
-  padding: 20px;
+  min-height: 10px;
+  max-height: 150px;
+  padding: 1rem 0.5rem;
   background-color: none;
-  border: 2px solid black;
+  border: 1.5px solid black;
   border-radius: 15px;
-
+  box-sizing: border-box;
+  resize: none;
+  font-family: sans-serif;
+  font-size: medium;
+  margin-right: 0.5rem;
+  white-space: pre-wrap; /* Preserves whitespace and line breaks */
+  word-wrap: break-word;
 }
 
 .input-box-container {
   position: fixed; /* Fixes the input box to the bottom */
-  left: 30rem;
-  right: 30rem;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
-  padding: 1rem 2rem; /* Same horizontal padding as #root to align content */
+  padding: 1rem; /* Same horizontal padding as #root to align content */
   background: none; /* Match the background with your chat application background */
+  display: flex;
   z-index: 1000;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  box-sizing: border-box;
 }
+
+.submit-button {
+  width: 50px;
+  height: 50px;
+  background-color: #79AE93;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #66b882; /* Slightly lighter or darker green on hover */
+}
+
+.submit-button img {
+  max-width: 70%;
+  max-height: 70%;
+  width: auto;
+  height: auto;
+}
+
+
+/* DARK MODE STYLING */
+@media (prefers-color-scheme: dark) {
+  .textbox,
+  .textinput {
+    border: 1px solid lightgrey; /* Lighter border color for dark mode */
+  }
+
+}  
+

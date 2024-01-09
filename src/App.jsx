@@ -13,7 +13,7 @@ function App() {
     <>
     <div className='header'>
       <img src={babylonLeafLogo}></img>
-      <h2><a style={{color: '#004258'}} href='https://babylonmicrofarms.com' target='_blank'>BABYLON MICROFARMS GALLERI SUPPORT</a> </h2>
+      <h2><a style={{color: '#004258'}} href='https://babylonmicrofarms.com' target='_blank'>BABYLON GALLERI SUPPORT</a> </h2>
     </div>
 
       <h3>Powered by ChatGPT</h3>
