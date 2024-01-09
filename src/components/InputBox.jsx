@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./chatbox.css";
 
 export const InputBox = ({setUserInput, isLoading}) => {
-    console.log(isLoading ? "true":"false");
     const [localInput, setLocalInput] = useState("");
 
     const keyDown = (event) => {

@@ -10,7 +10,7 @@
   }
 
 
-.textbox {
+  .textbox {
     width: 300px;        /* Width of the chat box */
     height: 100px;       /* Height of the chat box */
     background-color: #53e300cb; /* Background color */

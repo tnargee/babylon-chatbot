@@ -56,8 +56,10 @@ export const ChatHistory = ({userInput, loadingSetter}) => {
     return (
         <div className="chat-history">
             {history.map((text, index) => {
+                
                 return (
                     <>
+                        {index%2==0 ? <p>User:</p> : <p>Assistant:</p>}
                         <ChatBox key={index} input = {text}></ChatBox>
                     </>
                 );
