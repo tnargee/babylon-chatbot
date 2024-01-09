@@ -1,7 +1,7 @@
 .container {
     width: 100%; /* Adjust the width as necessary */
-    min-height: 500px;
-    max-height: 500px; /* Adjust the height as desired */
+    min-height: 1000px;
+    max-height: 1000px; /* Adjust the height as desired */
     border: 1px solid #ccc; /* Optional: adds a border around the chat container */
     overflow-y: auto; /* Enables vertical scrolling */
     margin-bottom: 10px; /* Space between chat container and input box */
@@ -13,12 +13,12 @@
 .textbox {
     width: 300px;        /* Width of the chat box */
     height: 100px;       /* Height of the chat box */
-    background-color: #bab0b0; /* Background color */
+    background-color: #53e300cb; /* Background color */
     border: 5px solid black; /* Border around the chat box */
     overflow-x: auto;
     text-align: center;
-    min-height: 600px;
-    max-height: 1000px; /* Adjust the height as desired */
+    min-height: 100px;
+    max-height: 300px; /* Adjust the height as desired */
     /* border: 1px solid #ccc;  Optional: adds a border around the chat container */
     overflow-y: auto; /* Enables vertical scrolling */
     margin-bottom: 0px; /* Space between chat container and input box */

@@ -3,9 +3,10 @@ import ChatBox from "./ChatBox";
 import { createThread, query } from "../helpers";
 import { OpenAI } from "openai";
 
-export const ChatHistory = ({userInput}) => {
+export const ChatHistory = ({userInput, loadingSetter}) => {
     const [history, setHistory] = useState([]);
     const [thread, setThread] = useState(null);
+    const [isLoading, setIsLoading] = useState(null);
     
 
     useEffect(() => {
@@ -16,10 +17,15 @@ export const ChatHistory = ({userInput}) => {
         threadSetter();
     }, [])
 
+    useEffect(() => {
+        loadingSetter(isLoading);
+    }, [isLoading])
+
 
     useEffect(() => {
 
         const ask = async () => {
+            setIsLoading(true);
             return await query(userInput, thread);
         }
 
@@ -30,6 +36,7 @@ export const ChatHistory = ({userInput}) => {
                     return [...prevState, userInput]});
 
                 let response = await ask();
+                setIsLoading(false);
                 setHistory((prevState) => {
                     return [...prevState, response]
                 })
@@ -55,6 +62,7 @@ export const ChatHistory = ({userInput}) => {
                     </>
                 );
             })}
+            {isLoading && <p>Loading Response...</p>}
         </div>
     )
 }

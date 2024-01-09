@@ -5,14 +5,15 @@ import "./chatbox.css"
 
 export const Chatbot = () => {
     const [userInput, setUserInput] = useState("");
+    const [loadingQuery, setLoadingQuery] = useState(false);
 
     return (
         <>
         <div className="container">
-            <ChatHistory userInput={userInput}></ChatHistory>
+            <ChatHistory userInput={userInput} loadingSetter={setLoadingQuery}></ChatHistory>
         </div>
 
-            <InputBox setUserInput={setUserInput}></InputBox>
+            <InputBox setUserInput={setUserInput} isLoading={loadingQuery}></InputBox>
             
         </>
     )
