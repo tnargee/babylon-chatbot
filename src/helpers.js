@@ -42,7 +42,9 @@ export async function query(question, threadID) {
         if (runStatus.status == "completed"){
             console.log("Run finished")
             const msgs = await client.beta.threads.messages.list(threadID)
-            return msgs.data[0].content[0].text.value;
+            const response = msgs.data[0].content[0].text.value;
+            let cleanedResponse = response.replace(/【[0-9]+†source】/g, "");
+            return cleanedResponse;
             break;
         } else {
             console.log("Run is not finished yet");
