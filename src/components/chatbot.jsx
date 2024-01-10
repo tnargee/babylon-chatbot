@@ -10,7 +10,7 @@ export const Chatbot = () => {
     return (
         <>
         <div className="container">
-            <ChatHistory userInput={userInput} loadingSetter={setLoadingQuery}></ChatHistory>
+            <ChatHistory userInput={userInput} loadingSetter={setLoadingQuery} setUserInput={setUserInput}></ChatHistory>
         </div>
 
 

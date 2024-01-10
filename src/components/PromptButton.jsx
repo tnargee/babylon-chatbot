@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import './PromptButton.css'
 import ChatBotImage from '../assets/BMF_IMG.png'
 
-export const PromptButton =() => {
+export const PromptButton = ({setUserInput}) => {
     return (
         <div>
     <img className='chatbotimage'
@@ -18,7 +18,7 @@ export const PromptButton =() => {
         borderRadius: "20px", marginLeft: "0px", 
         textTransform: "none", flexDirection: 'column'}} 
 
-    size='small'>Why is the company called Babylon?</Button>
+    size='small' onClick={() => setUserInput("Why is the company called Babylon?")}>Why is the company called Babylon?</Button>
     <Button variant='contained' 
         style={{backgroundColor: '#004258'}} 
         sx={{height: "70px", 
@@ -27,7 +27,7 @@ export const PromptButton =() => {
         textTransform: "none", gap: "100px", 
         alignItems: 'center', flexDirection: 'column'}} 
 
-    size='small'>How much work is involved in growing?</Button>
+    size='small' onClick={() => setUserInput("How much work is involved in growing?")}>How much work is involved in growing?</Button>
     <div aria-orientation='vertical'>
     <Button variant='contained' 
         style={{backgroundColor: '#004258'}} 
@@ -36,7 +36,7 @@ export const PromptButton =() => {
         borderRadius: "20px", marginLeft: "0px",  
         textTransform: "none", flexDirection: 'column', marginTop: "20px"}} 
 
-    size='small'>How do the Micro-Farms work?</Button>
+    size='small' onClick={(() => setUserInput("How do the Micro-Farms work?"))}>How do the Micro-Farms work?</Button>
     
     
     <Button variant='contained' 
@@ -46,7 +46,7 @@ export const PromptButton =() => {
     borderRadius: "20px", marginLeft: "20px",  
     textTransform: "none", flexDirection: 'column', marginTop: "20px"}} 
 
-    size='small'>What kinds of plants can grow in my micro-farm?</Button>
+    size='small' onClick={() => setUserInput("What kinds of plants can grow in my micro-farm?")}>What kinds of plants can grow in my micro-farm?</Button>
     </div>
     </div>
     

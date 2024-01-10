@@ -5,7 +5,7 @@ import { OpenAI } from "openai";
 import Button from '@mui/material/Button';
 import { PromptButton } from "./PromptButton";
 
-export const ChatHistory = ({userInput, loadingSetter}) => {
+export const ChatHistory = ({userInput, loadingSetter, setUserInput}) => {
     const [history, setHistory] = useState([]);
     const [thread, setThread] = useState(null);
     const [isLoading, setIsLoading] = useState(null);
@@ -33,7 +33,7 @@ export const ChatHistory = ({userInput, loadingSetter}) => {
 
         const updateHistory = async () => {
              
-            if (userInput.trim() != ""){ 
+            if (thread && userInput.trim() != ""){ 
                 setHistory((prevState) => {
                     return [...prevState, userInput]});
 
@@ -58,7 +58,7 @@ export const ChatHistory = ({userInput, loadingSetter}) => {
     return (
         <div>
             { history.length === 0 &&
-            <PromptButton ></PromptButton>
+            <PromptButton setUserInput={setUserInput}></PromptButton>
             }
 
         <div className="chat-history">
