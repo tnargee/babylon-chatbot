@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import ChatBox from "./ChatBox";
 import { createThread, query } from "../helpers";
 import { OpenAI } from "openai";
+import Button from '@mui/material/Button';
+import { PromptButton } from "./PromptButton";
 
 export const ChatHistory = ({userInput, loadingSetter}) => {
     const [history, setHistory] = useState([]);
@@ -54,6 +56,11 @@ export const ChatHistory = ({userInput, loadingSetter}) => {
         
 
     return (
+        <div>
+            { history.length === 0 &&
+            <PromptButton ></PromptButton>
+            }
+
         <div className="chat-history">
             {history.map((text, index) => {
                 
@@ -61,10 +68,15 @@ export const ChatHistory = ({userInput, loadingSetter}) => {
                     <>
                         {index%2==0 ? <p>User:</p> : <p>Assistant:</p>}
                         <ChatBox key={index} input = {text}></ChatBox>
+
                     </>
+                
                 );
             })}
+
             {isLoading && <p>Loading Response...</p>}
+
+            </div>
         </div>
     )
 }

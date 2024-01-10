@@ -1,0 +1,16 @@
+h1{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: none;
+    font-size: x-small;
+    font-weight: lighter;
+}
+.chatbotimage{
+    display: block;
+    margin-left: 205px;
+    margin-top: 50px;
+    block-size: larger;
+    width: 200px;
+    height: 190px;
+}
