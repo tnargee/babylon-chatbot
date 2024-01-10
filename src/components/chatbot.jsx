@@ -12,11 +12,7 @@ export const Chatbot = () => {
         <div className="container">
             <ChatHistory userInput={userInput} loadingSetter={setLoadingQuery} setUserInput={setUserInput}></ChatHistory>
         </div>
-
-
             <InputBox setUserInput={setUserInput} isLoading={loadingQuery}></InputBox>
-
-            
         </>
     )
 }

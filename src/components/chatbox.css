@@ -1,7 +1,7 @@
 .container {
     width: 100%; /* Adjust the width as necessary */
     min-height: 500px;
-    max-height: 600px; /* Adjust the height as desired */
+    max-height: 68vh; /* Adjust the height as desired */
     border: none; /* Optional: adds a border around the chat container */
     overflow-y: auto; /* Enables vertical scrolling */
     margin-bottom: 10px; /* Space between chat container and input box */
@@ -12,30 +12,40 @@
 
 .textbox {
     width: 70vw;        /* Width of the chat box */
-    /* background-color: lightgrey; /* Background color */
     border: 1.5px solid black; /* Border around the chat box */
     border-radius: 15px; /* Border around the chat box */
     overflow-x: auto;
     min-height: 50px;
     max-width: 900px;
-    /* border: 1px solid #ccc;  Optional: adds a border around the chat container */
     overflow-y: auto; /* Enables vertical scrolling */
     margin-bottom: 0px; /* Space between chat container and input box */
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-items: flex-start;
+    text-align: left;
     padding: 0rem 1rem;
     white-space: pre-wrap; /* Preserves whitespace and line breaks */
     word-wrap: break-word;
+    font-size: 17px;
   }
+
+.assistant-message .textbox {
+  background-color: rgb(202, 238, 219);
+  color: black;
+}
+
+.user-message .textbox {
+  background-color: #F6F6F6;
+  color: black;
+}
 
 .textinput {
   /* box-sizing: border-box; */
   width: 70vw;
   max-width: 900px;
   margin: auto;
-  min-height: 10px;
-  max-height: 150px;
-  padding: 1rem 0.5rem;
+  min-height: 50px;
+  max-height: 100px;
+  padding: 0.75rem 1rem;
   background-color: none;
   border: 1.5px solid black;
   border-radius: 15px;
@@ -46,6 +56,7 @@
   margin-right: 0.5rem;
   white-space: pre-wrap; /* Preserves whitespace and line breaks */
   word-wrap: break-word;
+  overflow-y: hidden;
 }
 
 .input-box-container {
@@ -78,7 +89,7 @@
 }
 
 .submit-button:hover {
-  background-color: #66b882; /* Slightly lighter or darker green on hover */
+  background-color: #73c990; /* Slightly lighter or darker green on hover */
 }
 
 .submit-button img {
