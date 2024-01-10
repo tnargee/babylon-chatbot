@@ -13,7 +13,9 @@ export const Chatbot = () => {
             <ChatHistory userInput={userInput} loadingSetter={setLoadingQuery}></ChatHistory>
         </div>
 
+
             <InputBox setUserInput={setUserInput} isLoading={loadingQuery}></InputBox>
+
             
         </>
     )

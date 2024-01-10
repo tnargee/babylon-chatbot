@@ -1,9 +1,10 @@
 import { useState } from 'react'
 
 
-import Chatbot from './components/Chatbot.jsx'
+import Chatbot from './components/chatbot.jsx'
 import './App.css'
 import babylonLeafLogo from './assets/babylon_leaf.png';
+
 
 
 
@@ -17,10 +18,14 @@ function App() {
     </div>
 
       <h3>Powered by ChatGPT</h3>
-      <Chatbot></Chatbot>
-    <div>
+      <Chatbot>
+      
+      </Chatbot>
     
-    </div>
+    
+
+    
+    
     
     
       
