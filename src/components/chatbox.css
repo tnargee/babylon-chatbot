@@ -16,9 +16,8 @@
     border: 1.5px solid black; /* Border around the chat box */
     border-radius: 15px; /* Border around the chat box */
     overflow-x: auto;
-    text-align: left;
     min-height: 50px;
-    max-width: 950px;
+    max-width: 900px;
     /* border: 1px solid #ccc;  Optional: adds a border around the chat container */
     overflow-y: auto; /* Enables vertical scrolling */
     margin-bottom: 0px; /* Space between chat container and input box */

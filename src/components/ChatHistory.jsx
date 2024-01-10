@@ -4,6 +4,8 @@ import { createThread, query } from "../helpers";
 import { OpenAI } from "openai";
 import Button from '@mui/material/Button';
 import { PromptButton } from "./PromptButton";
+import userIcon from '../assets/user-icon2.png';
+import assistantIcon from '../assets/assistant-icon.png';
 
 export const ChatHistory = ({userInput, loadingSetter}) => {
     const [history, setHistory] = useState([]);
@@ -65,11 +67,22 @@ export const ChatHistory = ({userInput, loadingSetter}) => {
             {history.map((text, index) => {
                 
                 return (
-                    <>
-                        {index%2==0 ? <p>User:</p> : <p>Assistant:</p>}
+                    <div className="chat-entry">
+                        {index%2==0 ? 
+                        <div className="chat-sender">
+                            <img src={userIcon} alt="User icon"/> 
+                            <p>You</p>
+                        </div>    
+                        :
+                        <div className="chat-sender">
+                            <img src={assistantIcon} alt="Assistant icon"/>
+                            <p>Assistant</p>
+                        </div>}
+                
+                        
                         <ChatBox key={index} input = {text}></ChatBox>
 
-                    </>
+                    </div>
                 
                 );
             })}
