@@ -12,7 +12,7 @@ export const PromptButton = ({setUserInput}) => {
 
     
     <Button variant='contained' 
-        style={{backgroundColor: '#004258'}} 
+        style={{backgroundColor: '#004258', fontSize: "15px"}} 
         sx={{height: "70px", 
         width: "300px",
         borderRadius: "20px", marginLeft: "0px", 
@@ -20,7 +20,7 @@ export const PromptButton = ({setUserInput}) => {
 
     size='small' onClick={() => setUserInput("Why is the company called Babylon?")}>Why is the company called Babylon?</Button>
     <Button variant='contained' 
-        style={{backgroundColor: '#004258'}} 
+        style={{backgroundColor: '#004258', fontSize: "15px"}} 
         sx={{height: "70px", 
         width: "300px",
         borderRadius: "20px", marginLeft: "20px",  
@@ -30,7 +30,7 @@ export const PromptButton = ({setUserInput}) => {
     size='small' onClick={() => setUserInput("How much work is involved in growing?")}>How much work is involved in growing?</Button>
     <div aria-orientation='vertical'>
     <Button variant='contained' 
-        style={{backgroundColor: '#004258'}} 
+        style={{backgroundColor: '#004258', fontSize: "15px"}} 
         sx={{height: "70px", 
         width: "300px",
         borderRadius: "20px", marginLeft: "0px",  
@@ -40,7 +40,7 @@ export const PromptButton = ({setUserInput}) => {
     
     
     <Button variant='contained' 
-    style={{backgroundColor: '#004258'}} 
+    style={{backgroundColor: '#004258', fontSize: "15px"}} 
     sx={{height: "70px", 
     width: "300px",
     borderRadius: "20px", marginLeft: "20px",  
