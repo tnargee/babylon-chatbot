@@ -19,10 +19,10 @@ Babylon Galleri Chatbot is a sophisticated web-based application designed to pro
 - **Git & GitHub**: For version control and repository hosting.
 
 ## Current Status
-At the moment this web application is not deployed or functional due to security concerns regarding Babylon Microfarms user guide. The assistant API used for the chatbot contains confidential information about Babylon Microfarm's products and should be protected. Below is a guide to setup/install the UI for the web app along with videos showcasing how the chatbot works in action, however the functionality of the chatbot itself is currently inactive. 
+At the moment this web application is not deployed or functional due to security concerns regarding Babylon Microfarms user guide. The assistant API used for the chatbot contains confidential information about Babylon Microfarm's products and should be protected. Below is a guide to setup/install the UI for the web app along with a video demo showcasing how the chatbot works in action, however the functionality of the chatbot itself is currently inactive. 
 
 ## Demo
-
+![Babylon Gallery Chatbot Demo](https://github.com/tnargee/babylon-microfarms-chatapp/blob/main/src/assets/Chatbot-demo.gif)
 
 ## Setup and Installation
 1. **Clone the repository:**
